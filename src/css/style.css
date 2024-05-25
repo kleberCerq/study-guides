@@ -1,0 +1,88 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #070f2b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#add-button {
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #070f2b;
+  font-size: 50px;
+  border: none;
+}
+
+#form-container {
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+form {
+  width: 340px;
+  height: 190px;
+  background-color: #013a63;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+#form-first-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+label {
+  font-size: 20px;
+  margin: 10px 0px 0px 20px;
+}
+
+#cancel-button {
+  cursor: pointer;
+  background-color: #013a63;
+  font-size: 25px;
+  margin: -30px 10px 0px 0px;
+  border: none;
+}
+
+#input-name {
+  width: 300px;
+  border-radius: 5px;
+  margin: 5px 20px 5px 20px;
+  border: none;
+  color: #070f2b;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#send-button {
+  cursor: pointer;
+  width: 150px;
+  background-color: #01497c;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 5px;
+  border: none;
+}
+
+#send-button:hover {
+  background-color: #2a6f97;
+}

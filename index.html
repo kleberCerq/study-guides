@@ -4,7 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script src="https://kit.fontawesome.com/ea7bc4cbce.js" crossorigin="anonymous"></script>
     <title>Guias de Estudo</title>
   </head>
-  <body></body>
+  <body>
+    <button id="add-button" onclick="displayForm()"><i class="fa-solid fa-circle-plus"></i></button>
+    <div id="form-container">
+      <form action="/submit" method="post">
+        <div id="form-first-row">
+          <label for="input-name">Criar novo guia:</label>
+          <button id="cancel-button" type="reset" onclick="hideForm()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <input type="text" name="input-name" id="input-name" placeholder="Novo guia" required />
+        <input type="submit" id="send-button" value="Criar" />
+      </form>
+    </div>
+    <script src="/src/js/script.js"></script>
+  </body>
 </html>
