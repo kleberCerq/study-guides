@@ -9,15 +9,15 @@
     <title>Guias de Estudo</title>
   </head>
   <body>
-    <button id="add-button" onclick="displayForm()"><i class="fa-solid fa-circle-plus"></i></button>
+    <button id="add-guide" onclick="displayForm()"><i class="fa-solid fa-circle-plus"></i></button>
     <div id="form-container">
-      <form action="/submit" method="post">
+      <form>
         <div id="form-first-row">
           <label for="input-name">Criar novo guia:</label>
           <button id="cancel-button" type="reset" onclick="hideForm()"><i class="fa-solid fa-xmark"></i></button>
         </div>
-        <input type="text" name="input-name" id="input-name" placeholder="Novo guia" required />
-        <input type="submit" id="send-button" value="Criar" />
+        <input id="input-name" type="text" placeholder="Título do guia" required />
+        <input id="create-button" type="submit" value="Criar" />
       </form>
     </div>
     <script src="/src/js/script.js"></script>
