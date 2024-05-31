@@ -41,7 +41,7 @@ form {
   border-radius: 5px;
 }
 
-#form-first-row {
+#form-top {
   width: 100%;
   display: flex;
   align-items: center;
@@ -62,7 +62,7 @@ label {
   border: none;
 }
 
-#input-name {
+#input-title {
   width: 300px;
   border-radius: 5px;
   margin: 5px 20px 5px 20px;

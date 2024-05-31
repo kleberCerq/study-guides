@@ -12,12 +12,12 @@
     <button id="add-guide" type="button" title="Adicionar novo guia" onclick="displayForm()"><i class="fa-solid fa-circle-plus"></i></button>
     <div id="form-container">
       <form>
-        <div id="form-first-row">
-          <label for="input-name">Criar novo guia:</label>
+        <div id="form-top">
+          <label for="input-title">Criar novo guia:</label>
           <button id="cancel-button" type="reset" title="Cancelar" onclick="hideForm()"><i class="fa-solid fa-xmark"></i></button>
         </div>
-        <input id="input-name" type="text" placeholder="Título do guia" required />
-        <input id="create-button" type="submit" value="Criar" />
+        <input id="input-title" type="text" placeholder="Título do guia" required />
+        <input id="create-button" type="reset" value="Criar" onclick="createGuide()" />
       </form>
     </div>
     <script src="/src/js/script.js"></script>
